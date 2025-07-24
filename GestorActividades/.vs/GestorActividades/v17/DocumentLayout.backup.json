@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\aargudo\\source\\repos\\Kruger\\GestorActividadesProject\\GestorActividades\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\kruger\\gestoractividadesproject\\gestoractividades\\gestoractividades\\servicios\\actividadservicio\\servicioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\servicios\\actividadservicio\\servicioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E00F3D3-B291-47B2-981B-515943D904F4}|GestorActividades.Tests\\GestorActividades.Tests.csproj|c:\\users\\aargudo\\source\\repos\\kruger\\gestoractividadesproject\\gestoractividades\\gestoractividades.tests\\servicioactividadtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E00F3D3-B291-47B2-981B-515943D904F4}|GestorActividades.Tests\\GestorActividades.Tests.csproj|solutionrelative:gestoractividades.tests\\servicioactividadtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ServicioActividad.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\Kruger\\GestorActividadesProject\\GestorActividades\\GestorActividades\\Servicios\\ActividadServicio\\ServicioActividad.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Servicios\\ActividadServicio\\ServicioActividad.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\Kruger\\GestorActividadesProject\\GestorActividades\\GestorActividades\\Servicios\\ActividadServicio\\ServicioActividad.cs",
+              "RelativeToolTip": "GestorActividades\\Servicios\\ActividadServicio\\ServicioActividad.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwF4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:46:34.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ServicioUsuarioTests.cs",
               "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\Kruger\\GestorActividadesProject\\GestorActividades\\GestorActividades.Tests\\ServicioUsuarioTests.cs",
               "RelativeDocumentMoniker": "GestorActividades.Tests\\ServicioUsuarioTests.cs",
@@ -39,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ServicioActividadTests.cs",
               "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\Kruger\\GestorActividadesProject\\GestorActividades\\GestorActividades.Tests\\ServicioActividadTests.cs",
               "RelativeDocumentMoniker": "GestorActividades.Tests\\ServicioActividadTests.cs",
@@ -52,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ServicioProyectoTests.cs",
               "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\Kruger\\GestorActividadesProject\\GestorActividades\\GestorActividades.Tests\\ServicioProyectoTests.cs",
               "RelativeDocumentMoniker": "GestorActividades.Tests\\ServicioProyectoTests.cs",
