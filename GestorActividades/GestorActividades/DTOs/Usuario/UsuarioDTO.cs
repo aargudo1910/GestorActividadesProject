@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GestorActividades.DTOs.Usuario
 {
-    public class UsuarioDTO
+    public class UsuarioDto
     {
         public Guid UsuarioId { get; set; }
         public string NombreCompleto { get; set; }

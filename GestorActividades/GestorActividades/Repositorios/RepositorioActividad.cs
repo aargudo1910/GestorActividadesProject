@@ -5,31 +5,42 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GestorActividades.Repositorios
 {
-    public class RepositorioActividad: RepositorioGenerico<Actividad>, IRepositorioActividad
+    public class RepositorioActividad : RepositorioGenerico<Actividade>, IRepositorioActividad
     {
-        private readonly AppDbContext _contexto;
+        public RepositorioActividad(AppDbContext contexto) : base(contexto) { }
 
-        public RepositorioActividad(AppDbContext contexto) : base(contexto)
+        public async Task<IEnumerable<Actividade>> ObtenerTodosActivosAsync()
         {
-            _contexto = contexto;
-        }
-
-        public async Task<IEnumerable<Actividad>> ObtenerPorProyectoAsync(Guid proyectoId)
-        {
-            return await _contexto.Actividades
-                .Where(a => a.ProyectoId == proyectoId && a.Estado != "Eliminado")
+            return await _dbSet
+                .Include(a => a.Proyecto)
+                .AsNoTracking()
+                .Where(a => !a.Estado.Equals("Eliminado", StringComparison.OrdinalIgnoreCase))
                 .ToListAsync();
         }
 
-        public async Task<IEnumerable<Actividad>> ObtenerPorUsuarioYRangoFechasAsync(Guid usuarioId, DateTime desde, DateTime hasta)
+        public async Task<Actividade?> ObtenerPorIdActivoAsync(Guid id)
         {
-            return await _contexto.Actividades
+            return await _dbSet
                 .Include(a => a.Proyecto)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(a =>
+                    a.ActividadId == id &&
+                    !a.Estado.Equals("Eliminado", StringComparison.OrdinalIgnoreCase));
+        }
+
+        public async Task<IEnumerable<Actividade>> ObtenerPorUsuarioYRangoFechasAsync(Guid usuarioId, DateTime desde, DateTime hasta)
+        {
+            var desdeDateOnly = DateOnly.FromDateTime(desde);
+            var hastaDateOnly = DateOnly.FromDateTime(hasta);
+
+            return await _dbSet
+                .Include(a => a.Proyecto)
+                .AsNoTracking()
                 .Where(a =>
                     a.Proyecto.UsuarioId == usuarioId &&
-                    a.Fecha >= desde &&
-                    a.Fecha <= hasta &&
-                    a.Estado != "Eliminado")
+                    a.Fecha >= desdeDateOnly &&
+                    a.Fecha <= hastaDateOnly &&
+                    !a.Estado.Equals("Eliminado", StringComparison.OrdinalIgnoreCase))
                 .ToListAsync();
         }
     }

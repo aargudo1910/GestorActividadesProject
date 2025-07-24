@@ -5,7 +5,7 @@ namespace GestorActividades.Entidades;
 
 public partial class Usuario : EntidadBase
 {
-public Guid UsuarioId { get; set; }
+    public Guid UsuarioId { get; set; }
 
     public string NombreCompleto { get; set; } = null!;
 

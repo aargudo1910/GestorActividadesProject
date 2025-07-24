@@ -1,4 +1,4 @@
-﻿using GestorActividades.DTOs.Actividad;
+﻿using GestorActividades.DTOs.Actividade;
 using GestorActividades.Servicios;
 using Microsoft.AspNetCore.Mvc;
 

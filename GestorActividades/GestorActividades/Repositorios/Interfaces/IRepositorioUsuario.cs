@@ -3,6 +3,9 @@ namespace GestorActividades.Repositorios.Interfaces
 {
     public interface IRepositorioUsuario : IRepositorioGenerico<Usuario>
     {
-        Task<bool> CorreoExiste(string correo);
+        Task<IEnumerable<Usuario>> ObtenerTodosActivosAsync();
+        Task<Usuario?> ObtenerPorIdActivoAsync(Guid id);
+
+        Task<Usuario?> BuscarPorCorreoAsync(string correo);
     }
 }

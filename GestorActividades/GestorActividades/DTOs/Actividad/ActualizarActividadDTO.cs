@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GestorActividades.DTOs.Actividad
+namespace GestorActividades.DTOs.Actividade
 {
     public class ActividadUpdateDto
     {
@@ -28,5 +28,10 @@ namespace GestorActividades.DTOs.Actividad
 
         [Required(ErrorMessage = "El identificador del proyecto es obligatorio.")]
         public Guid ProyectoId { get; set; }
+
+        [Required(ErrorMessage = "El estado del proyecto es obligatorio.")]
+        [RegularExpression("Activo|Inactivo|Eliminado", ErrorMessage = "El estado debe ser Activo, Inactivo o Eliminado.")] 
+        public string Estado { get; set; }
+
     }
 }

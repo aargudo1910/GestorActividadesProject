@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GestorActividades.Entidades;
 
-public partial class Actividad : EntidadBase
+public partial class Actividade : EntidadBase
 {
     public Guid ActividadId { get; set; }
 
@@ -11,11 +11,11 @@ public partial class Actividad : EntidadBase
 
     public string? Descripcion { get; set; }
 
-    public DateTime Fecha { get; set; }
+    public DateOnly Fecha { get; set; }
 
     public decimal HorasEstimadas { get; set; }
 
-    public decimal HorasReales { get; set; }
+    public decimal? HorasReales { get; set; }
 
     public Guid ProyectoId { get; set; }
 

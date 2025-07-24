@@ -2,9 +2,10 @@
 
 namespace GestorActividades.Repositorios.Interfaces
 {
-    public interface IRepositorioActividad : IRepositorioGenerico<Actividad>
+    public interface IRepositorioActividad : IRepositorioGenerico<Actividade>
     {
-        Task<IEnumerable<Actividad>> ObtenerPorProyectoAsync(Guid proyectoId);
-        Task<IEnumerable<Actividad>> ObtenerPorUsuarioYRangoFechasAsync(Guid usuarioId, DateTime desde, DateTime hasta);
+        Task<IEnumerable<Actividade>> ObtenerTodosActivosAsync();
+        Task<Actividade?> ObtenerPorIdActivoAsync(Guid id);
+        Task<IEnumerable<Actividade>> ObtenerPorUsuarioYRangoFechasAsync(Guid usuarioId, DateTime desde, DateTime hasta);
     }
 }

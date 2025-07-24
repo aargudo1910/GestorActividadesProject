@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
 using GestorActividades.Entidades;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +16,7 @@ public partial class AppDbContext : DbContext
     {
     }
 
-    public virtual DbSet<Actividad> Actividades { get; set; }
+    public virtual DbSet<Actividade> Actividades { get; set; }
 
     public virtual DbSet<Proyecto> Proyectos { get; set; }
 
@@ -27,12 +28,17 @@ public partial class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Actividad>(entity =>
+        modelBuilder.Entity<Actividade>(entity =>
         {
-            entity.HasKey(e => e.ActividadId).HasName("PK__Activida__981483904B98BEB5");
+            entity.HasKey(e => e.ActividadId).HasName("PK__Activida__98148390AE2535EF");
 
             entity.Property(e => e.ActividadId).HasDefaultValueSql("(newid())");
             entity.Property(e => e.Descripcion).HasMaxLength(500);
+            entity.Property(e => e.Estado).HasMaxLength(20);
+            entity.Property(e => e.FechaCreacion)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.FechaModificacion).HasColumnType("datetime");
             entity.Property(e => e.HorasEstimadas).HasColumnType("decimal(5, 2)");
             entity.Property(e => e.HorasReales).HasColumnType("decimal(5, 2)");
             entity.Property(e => e.Titulo).HasMaxLength(100);
@@ -44,11 +50,15 @@ public partial class AppDbContext : DbContext
 
         modelBuilder.Entity<Proyecto>(entity =>
         {
-            entity.HasKey(e => e.ProyectoId).HasName("PK__Proyecto__CF241D65244AE097");
+            entity.HasKey(e => e.ProyectoId).HasName("PK__Proyecto__CF241D6526EDD2D0");
 
             entity.Property(e => e.ProyectoId).HasDefaultValueSql("(newid())");
             entity.Property(e => e.Descripcion).HasMaxLength(500);
             entity.Property(e => e.Estado).HasMaxLength(20);
+            entity.Property(e => e.FechaCreacion)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.FechaModificacion).HasColumnType("datetime");
             entity.Property(e => e.Nombre).HasMaxLength(100);
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.Proyectos)
@@ -58,13 +68,17 @@ public partial class AppDbContext : DbContext
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuarios__2B3DE7B8A06006F6");
+            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuarios__2B3DE7B8E520DEE1");
 
-            entity.HasIndex(e => e.Correo, "UQ__Usuarios__60695A191593E1BA").IsUnique();
+            entity.HasIndex(e => e.Correo, "UQ__Usuarios__60695A193EFAE1A8").IsUnique();
 
             entity.Property(e => e.UsuarioId).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.Correo).HasMaxLength(100);
-            entity.Property(e => e.Estado).HasDefaultValue(true);
+            entity.Property(e => e.Estado).HasMaxLength(20);
+            entity.Property(e => e.FechaCreacion)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.FechaModificacion).HasColumnType("datetime");
             entity.Property(e => e.NombreCompleto).HasMaxLength(100);
             entity.Property(e => e.Rol).HasMaxLength(20);
             entity.Property(e => e.Telefono).HasMaxLength(20);

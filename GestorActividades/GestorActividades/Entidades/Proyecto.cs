@@ -11,15 +11,13 @@ public partial class Proyecto : EntidadBase
 
     public string? Descripcion { get; set; }
 
-    public DateTime FechaInicio { get; set; }
+    public DateOnly FechaInicio { get; set; }
 
-    public DateTime FechaFin { get; set; }
-
-    public string Estado { get; set; } = null!;
+    public DateOnly FechaFin { get; set; }
 
     public Guid UsuarioId { get; set; }
 
-    public virtual ICollection<Actividad> Actividades { get; set; } = new List<Actividad>();
+    public virtual ICollection<Actividade> Actividades { get; set; } = new List<Actividade>();
 
     public virtual Usuario Usuario { get; set; } = null!;
 }

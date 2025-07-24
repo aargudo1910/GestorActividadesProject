@@ -13,7 +13,9 @@ CREATE TABLE Usuarios (
     Correo NVARCHAR(100) NOT NULL UNIQUE,
     Telefono NVARCHAR(20),
     Rol NVARCHAR(20) NOT NULL CHECK (Rol IN ('Admin', 'Editor', 'Viewer')),
-    Estado BIT NOT NULL DEFAULT 1
+    Estado NVARCHAR(20) NOT NULL CHECK (Estado IN ('Activo', 'Inactivo','Eliminado')),
+	FechaCreacion DATETIME NOT NULL DEFAULT GETDATE(),
+	FechaModificacion DATETIME NULL,
 );
 GO
 
@@ -26,6 +28,9 @@ CREATE TABLE Proyectos (
     FechaFin DATE NOT NULL,
     Estado NVARCHAR(20) NOT NULL CHECK (Estado IN ('Activo', 'Inactivo','Eliminado')),
     UsuarioId UNIQUEIDENTIFIER NOT NULL,
+	FechaCreacion DATETIME NOT NULL DEFAULT GETDATE(),
+	FechaModificacion DATETIME NULL,
+
     CONSTRAINT FK_Proyectos_Usuarios FOREIGN KEY (UsuarioId)
         REFERENCES Usuarios (UsuarioId)
         ON DELETE CASCADE
@@ -40,6 +45,9 @@ CREATE TABLE Actividades (
     Fecha DATE NOT NULL,
     HorasEstimadas DECIMAL(5, 2) NOT NULL CHECK (HorasEstimadas >= 0),
     HorasReales DECIMAL(5, 2) NULL CHECK (HorasReales >= 0),
+    Estado NVARCHAR(20) NOT NULL CHECK (Estado IN ('Activo', 'Inactivo','Eliminado')),
+	FechaCreacion DATETIME NOT NULL DEFAULT GETDATE(),
+	FechaModificacion DATETIME NULL,
     ProyectoId UNIQUEIDENTIFIER NOT NULL,
     CONSTRAINT FK_Actividades_Proyectos FOREIGN KEY (ProyectoId)
         REFERENCES Proyectos (ProyectoId)

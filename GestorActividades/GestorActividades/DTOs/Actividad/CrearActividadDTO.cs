@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GestorActividades.DTOs.Actividad
+namespace GestorActividades.DTOs.Actividade
 {
     public class ActividadCreateDto
     {
@@ -19,9 +19,8 @@ namespace GestorActividades.DTOs.Actividad
         [Range(0, 1000, ErrorMessage = "Las horas estimadas deben ser un valor positivo.")]
         public decimal HorasEstimadas { get; set; }
 
-        [Required(ErrorMessage = "Las horas reales son obligatorias.")]
         [Range(0, 1000, ErrorMessage = "Las horas reales deben ser un valor positivo.")]
-        public decimal HorasReales { get; set; }
+        public decimal? HorasReales { get; set; }
 
         [Required(ErrorMessage = "El identificador del proyecto es obligatorio.")]
         public Guid ProyectoId { get; set; }

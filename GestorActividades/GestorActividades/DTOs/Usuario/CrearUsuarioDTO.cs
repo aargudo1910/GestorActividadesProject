@@ -13,7 +13,8 @@ namespace GestorActividades.DTOs.Usuario
         [StringLength(100, ErrorMessage = "El correo no debe superar los 100  caracteres.")]
         public string Correo { get; set; }
 
-        [StringLength(10, ErrorMessage = "El teléfono debe ser menor a 10 caracteres.")]
+        [StringLength(10, ErrorMessage = "El teléfono debe tener como máximo 10 caracteres.")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "El teléfono solo debe contener números.")]
         public string Telefono { get; set; }
 
         [Required(ErrorMessage = "El rol es obligatorio.")]

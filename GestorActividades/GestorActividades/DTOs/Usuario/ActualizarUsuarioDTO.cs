@@ -5,8 +5,6 @@ namespace GestorActividades.DTOs.Usuario
 {
     public class UsuarioUpdateDto
     {
-        [Required(ErrorMessage = "El identificador del usuario es obligatorio.")]
-        public Guid UsuarioId { get; set; }
 
         [Required(ErrorMessage = "El nombre completo es obligatorio.")]
         [StringLength(100, ErrorMessage = "El nombre completo no debe superar los 100 caracteres.")]
@@ -17,7 +15,9 @@ namespace GestorActividades.DTOs.Usuario
         [StringLength(100, ErrorMessage = "El correo no debe superar los 100 caracteres.")]
         public string Correo { get; set; }
 
+        [Required(ErrorMessage = "El correo electrónico es obligatorio.")]
         [StringLength(10, ErrorMessage = "El teléfono no debe superar los 10 caracteres.")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "El teléfono solo debe contener números.")]
         public string Telefono { get; set; }
 
         [Required(ErrorMessage = "El rol es obligatorio.")]

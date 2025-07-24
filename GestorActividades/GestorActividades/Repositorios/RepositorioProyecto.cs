@@ -13,6 +13,19 @@ namespace GestorActividades.Repositorios
         {
             _contexto = contexto;
         }
+        public async Task<IEnumerable<Proyecto>> ObtenerTodosActivosAsync()
+        {
+            return await _dbSet
+                .Where(p => p.Estado != "Eliminado")
+                .ToListAsync();
+        }
+
+        public async Task<Proyecto?> ObtenerPorIdActivoAsync(Guid id)
+        {
+            return await _dbSet
+                .Where(p => p.ProyectoId == id && p.Estado != "Eliminado")
+                .FirstOrDefaultAsync();
+        }
 
         public async Task<IEnumerable<Proyecto>> ObtenerPorUsuarioAsync(Guid usuarioId)
         {

@@ -1,4 +1,4 @@
-﻿using GestorActividades.DTOs.Actividad;
+﻿using GestorActividades.DTOs.Actividade;
 
 namespace GestorActividades.Servicios
 {
