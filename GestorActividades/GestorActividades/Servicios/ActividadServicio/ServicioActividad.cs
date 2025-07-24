@@ -91,7 +91,8 @@ namespace GestorActividades.Servicios.ActividadServicio
                 Fecha = dto.Fecha,
                 HorasEstimadas = entidad.HorasEstimadas,
                 HorasReales = entidad.HorasReales ?? 0,
-                ProyectoId = entidad.ProyectoId
+                ProyectoId = entidad.ProyectoId,
+                Estado = entidad.Estado
             };
         }
 
