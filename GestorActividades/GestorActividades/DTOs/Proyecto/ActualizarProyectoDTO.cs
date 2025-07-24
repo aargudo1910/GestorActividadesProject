@@ -19,7 +19,7 @@ namespace GestorActividades.DTOs.Proyecto
         public DateTime FechaFin { get; set; }
 
         [Required(ErrorMessage = "El estado del proyecto es obligatorio.")]
-        [RegularExpression("Activo|Inactivo|Eliminado", ErrorMessage = "El estado debe ser Activo, Inactivo o Eliminado.")]
+        [RegularExpression("Activo|Inactivo", ErrorMessage = "El estado debe ser Activo, Inactivo.")]
         public string Estado { get; set; }
 
         [Required(ErrorMessage = "El identificador del usuario es obligatorio.")]

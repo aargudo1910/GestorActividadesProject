@@ -25,7 +25,7 @@ namespace GestorActividades.DTOs.Usuario
         public string Rol { get; set; }
 
         [Required(ErrorMessage = "El estado es obligatorio.")]
-        [RegularExpression("Activo|Inactivo|Eliminado", ErrorMessage = "El estado debe ser Activo, Inactivo o Eliminado.")]
+        [RegularExpression("Activo|Inactivo", ErrorMessage = "El estado debe ser Activo, Inactivo.")]
         public string Estado { get; set; }
     }
 }
