@@ -1,6 +1,8 @@
 ﻿using GestorActividades.DTOs.Proyecto;
 using GestorActividades.Entidades;
 using GestorActividades.Excepciones;
+using GestorActividades.Excepciones.Proyectos;
+using GestorActividades.Excepciones.Usuarios;
 using GestorActividades.Repositorios.Interfaces;
 using GestorActividades.Servicios.Interfaces;
 using Microsoft.Extensions.Logging;
@@ -59,7 +61,10 @@ namespace GestorActividades.Servicios
         {
             var usuario = await _repositorioUsuario.ObtenerPorIdActivoAsync(dto.UsuarioId);
             if (usuario is null)
-                throw new ExcepcionNegocio("El usuario asociado no existe o está eliminado.");
+                throw new ExcepcionUsuarioNoEncontrado();
+
+            if (dto.FechaFin < dto.FechaInicio)
+                throw new ExcepcionFechasInvalidas();
 
             var entidad = new Proyecto
             {
@@ -88,14 +93,18 @@ namespace GestorActividades.Servicios
             };
         }
 
-        public async Task<bool> ActualizarAsync(Guid id, ProyectoUpdateDto dto)
+
+        public async Task<bool> ActualizarAsync(Guid id, ActualizarProyectoDto dto)
         {
             var entidad = await _repositorioProyecto.ObtenerPorIdActivoAsync(id);
             if (entidad is null) return false;
 
+            if (dto.FechaFin < dto.FechaInicio)
+                throw new ExcepcionFechasInvalidas();
+
             entidad.Nombre = dto.Nombre;
             entidad.Descripcion = dto.Descripcion;
-            entidad.FechaInicio = DateOnly.FromDateTime(dto.FechaInicio);
+            entidad.FechaInicio = DateOnly.FromDateTime(dto.FechaInicio);   
             entidad.FechaFin = DateOnly.FromDateTime(dto.FechaFin);
             entidad.Estado = dto.Estado;
             entidad.FechaModificacion = DateTime.UtcNow;

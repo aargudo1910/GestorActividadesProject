@@ -272,17 +272,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProyectoUpdateDto"
+                "$ref": "#/components/schemas/ActualizarProyectoDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProyectoUpdateDto"
+                "$ref": "#/components/schemas/ActualizarProyectoDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProyectoUpdateDto"
+                "$ref": "#/components/schemas/ActualizarProyectoDto"
               }
             }
           }
@@ -490,6 +490,47 @@
         },
         "additionalProperties": false
       },
+      "ActualizarProyectoDto": {
+        "required": [
+          "estado",
+          "fechaFin",
+          "fechaInicio",
+          "nombre",
+          "usuarioId"
+        ],
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "descripcion": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "fechaInicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaFin": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "estado": {
+            "minLength": 1,
+            "pattern": "Activo|Inactivo|Eliminado",
+            "type": "string"
+          },
+          "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "ProyectoCreateDto": {
         "required": [
           "fechaFin",
@@ -551,52 +592,6 @@
           "estado": {
             "type": "string",
             "nullable": true
-          },
-          "usuarioId": {
-            "type": "string",
-            "format": "uuid"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProyectoUpdateDto": {
-        "required": [
-          "estado",
-          "fechaFin",
-          "fechaInicio",
-          "nombre",
-          "proyectoId",
-          "usuarioId"
-        ],
-        "type": "object",
-        "properties": {
-          "proyectoId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "nombre": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "descripcion": {
-            "maxLength": 500,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "fechaInicio": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "fechaFin": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "estado": {
-            "minLength": 1,
-            "pattern": "Activo|Inactivo|Eliminado",
-            "type": "string"
           },
           "usuarioId": {
             "type": "string",

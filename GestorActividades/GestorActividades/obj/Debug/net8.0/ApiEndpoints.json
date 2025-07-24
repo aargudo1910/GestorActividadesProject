@@ -165,7 +165,7 @@
       },
       {
         "Name": "dto",
-        "Type": "GestorActividades.DTOs.Proyecto.ProyectoUpdateDto",
+        "Type": "GestorActividades.DTOs.Proyecto.ActualizarProyectoDto",
         "IsRequired": true
       }
     ],

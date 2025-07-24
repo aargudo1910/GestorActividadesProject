@@ -7,7 +7,7 @@ namespace GestorActividades.Servicios.Interfaces
         Task<IEnumerable<ProyectoDto>> ObtenerTodosAsync();
         Task<ProyectoDto?> ObtenerPorIdAsync(Guid id);
         Task<ProyectoDto> CrearAsync(ProyectoCreateDto dto);
-        Task<bool> ActualizarAsync(Guid id, ProyectoUpdateDto dto);
+        Task<bool> ActualizarAsync(Guid id, ActualizarProyectoDto dto);
         Task<bool> EliminarAsync(Guid id);
     }
 }

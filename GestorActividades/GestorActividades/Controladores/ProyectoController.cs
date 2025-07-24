@@ -49,7 +49,7 @@ namespace GestorActividades.Controllers
 
         // PUT: /api/proyectos/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> Actualizar(Guid id, [FromBody] ProyectoUpdateDto dto)
+        public async Task<IActionResult> Actualizar(Guid id, [FromBody] ActualizarProyectoDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

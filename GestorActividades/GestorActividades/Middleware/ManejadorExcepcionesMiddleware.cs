@@ -1,4 +1,5 @@
 ﻿using GestorActividades.Excepciones;
+using GestorActividades.Excepciones.Base;
 using System.Net;
 using System.Text.Json;
 
@@ -17,7 +18,19 @@ public class ManejadorExcepcionesMiddleware
         {
             await _next(context);
         }
-        catch (ExcepcionNegocio ex) 
+        catch (ExcepcionNoEncontrado ex)
+        {
+            await ManejarAsync(context, ex.Message, HttpStatusCode.NotFound);
+        }
+        catch (ExcepcionConflicto ex)
+        {
+            await ManejarAsync(context, ex.Message, HttpStatusCode.Conflict);
+        }
+        catch (ExcepcionValidacion ex)
+        {
+            await ManejarAsync(context, ex.Message, HttpStatusCode.BadRequest);
+        }
+        catch (ExcepcionNegocio ex)
         {
             await ManejarAsync(context, ex.Message, HttpStatusCode.BadRequest);
         }
@@ -26,6 +39,7 @@ public class ManejadorExcepcionesMiddleware
             await ManejarAsync(context, "Error interno del servidor", HttpStatusCode.InternalServerError);
         }
     }
+
 
     private Task ManejarAsync(HttpContext context, string mensaje, HttpStatusCode status)
     {

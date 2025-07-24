@@ -14,7 +14,7 @@ namespace GestorActividades.Repositorios
             return await _dbSet
                 .Include(a => a.Proyecto)
                 .AsNoTracking()
-                .Where(a => !a.Estado.Equals("Eliminado", StringComparison.OrdinalIgnoreCase))
+                .Where(a => !a.Estado.Equals("Eliminado"))
                 .ToListAsync();
         }
 
@@ -25,7 +25,7 @@ namespace GestorActividades.Repositorios
                 .AsNoTracking()
                 .FirstOrDefaultAsync(a =>
                     a.ActividadId == id &&
-                    !a.Estado.Equals("Eliminado", StringComparison.OrdinalIgnoreCase));
+                    !a.Estado.Equals("Eliminado"));
         }
 
         public async Task<IEnumerable<Actividade>> ObtenerPorUsuarioYRangoFechasAsync(Guid usuarioId, DateTime desde, DateTime hasta)
@@ -40,7 +40,7 @@ namespace GestorActividades.Repositorios
                     a.Proyecto.UsuarioId == usuarioId &&
                     a.Fecha >= desdeDateOnly &&
                     a.Fecha <= hastaDateOnly &&
-                    !a.Estado.Equals("Eliminado", StringComparison.OrdinalIgnoreCase))
+                    !a.Estado.Equals("Eliminado"))
                 .ToListAsync();
         }
     }

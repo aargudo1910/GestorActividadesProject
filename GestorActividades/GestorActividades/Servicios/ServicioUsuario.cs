@@ -1,5 +1,6 @@
 ﻿using GestorActividades.DTOs.Usuario;
 using GestorActividades.Entidades;
+using GestorActividades.Excepciones.Usuarios;
 using GestorActividades.Repositorios.Interfaces;
 using Microsoft.Extensions.Logging;
 

@@ -2,10 +2,8 @@
 
 namespace GestorActividades.DTOs.Proyecto
 {
-    public class ProyectoUpdateDto
+    public class ActualizarProyectoDto
     {
-        [Required(ErrorMessage = "El identificador del proyecto es obligatorio.")]
-        public Guid ProyectoId { get; set; }
 
         [Required(ErrorMessage = "El nombre del proyecto es obligatorio.")]
         [StringLength(100, ErrorMessage = "El nombre no debe superar los 100 caracteres.")]
@@ -26,11 +24,5 @@ namespace GestorActividades.DTOs.Proyecto
 
         [Required(ErrorMessage = "El identificador del usuario es obligatorio.")]
         public Guid UsuarioId { get; set; }
-    }
-}
-namespace GestorActividades.DTOs.Proyecto
-{
-    public class ActualizarProyectoDTO
-    {
     }
 }
