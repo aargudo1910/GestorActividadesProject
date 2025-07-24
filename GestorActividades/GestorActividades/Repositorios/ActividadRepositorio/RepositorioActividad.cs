@@ -1,9 +1,8 @@
 ﻿using GestorActividades.Datos;
 using GestorActividades.Entidades;
-using GestorActividades.Repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace GestorActividades.Repositorios
+namespace GestorActividades.Repositorios.ActividadRepositorio
 {
     public class RepositorioActividad : RepositorioGenerico<Actividade>, IRepositorioActividad
     {
@@ -35,12 +34,10 @@ namespace GestorActividades.Repositorios
 
             return await _dbSet
                 .Include(a => a.Proyecto)
-                .AsNoTracking()
-                .Where(a =>
-                    a.Proyecto.UsuarioId == usuarioId &&
-                    a.Fecha >= desdeDateOnly &&
-                    a.Fecha <= hastaDateOnly &&
-                    !a.Estado.Equals("Eliminado"))
+                .Where(a => a.Proyecto.UsuarioId == usuarioId
+                            && a.Fecha >= desdeDateOnly
+                            && a.Fecha <= hastaDateOnly
+                            && a.Estado != "Eliminado")
                 .ToListAsync();
         }
     }

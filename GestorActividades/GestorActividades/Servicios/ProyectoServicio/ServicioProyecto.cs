@@ -3,11 +3,11 @@ using GestorActividades.Entidades;
 using GestorActividades.Excepciones;
 using GestorActividades.Excepciones.Proyectos;
 using GestorActividades.Excepciones.Usuarios;
-using GestorActividades.Repositorios.Interfaces;
-using GestorActividades.Servicios.Interfaces;
+using GestorActividades.Repositorios.ProyectoRepositorio;
+using GestorActividades.Repositorios.UsuarioRepositorio;
 using Microsoft.Extensions.Logging;
 
-namespace GestorActividades.Servicios
+namespace GestorActividades.Servicios.ProyectoServicio
 {
     public class ServicioProyecto : IServicioProyecto
     {

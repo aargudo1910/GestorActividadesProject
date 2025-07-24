@@ -1,6 +1,6 @@
 ﻿using GestorActividades.Entidades;
 
-namespace GestorActividades.Repositorios.Interfaces
+namespace GestorActividades.Repositorios.ProyectoRepositorio
 {
     public interface IRepositorioProyecto : IRepositorioGenerico<Proyecto>
     {

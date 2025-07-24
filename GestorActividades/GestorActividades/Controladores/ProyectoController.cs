@@ -1,5 +1,5 @@
 ﻿using GestorActividades.DTOs.Proyecto;
-using GestorActividades.Servicios.Interfaces;
+using GestorActividades.Servicios.ProyectoServicio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestorActividades.Controllers

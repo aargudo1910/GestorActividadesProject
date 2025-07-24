@@ -10,7 +10,5 @@
         public decimal HorasReales { get; set; }
         public Guid ProyectoId { get; set; }
         public string Estado { get; set; } 
-        public DateTime FechaCreacion { get; set; }
-        public DateTime? FechaModificacion { get; set; }
     }
 }

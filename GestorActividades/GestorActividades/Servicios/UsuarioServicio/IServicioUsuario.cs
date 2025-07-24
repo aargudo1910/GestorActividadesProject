@@ -1,6 +1,6 @@
 ﻿using GestorActividades.DTOs.Usuario;
 
-namespace GestorActividades.Servicios
+namespace GestorActividades.Servicios.UsuarioServicio
 {
     public interface IServicioUsuario
     {

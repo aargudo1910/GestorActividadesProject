@@ -1,11 +1,14 @@
 using GestorActividades.Datos;
-using GestorActividades.Repositorios.Interfaces;
-using GestorActividades.Repositorios;
 using Microsoft.EntityFrameworkCore;
 using GestorActividades.Middleware;
-using GestorActividades.Servicios;
 using GestorActividades.Mapeos;
-using GestorActividades.Servicios.Interfaces;
+using GestorActividades.Servicios.ActividadServicio;
+using GestorActividades.Servicios.ProyectoServicio;
+using GestorActividades.Servicios.UsuarioServicio;
+using GestorActividades.Repositorios.ProyectoRepositorio;
+using GestorActividades.Repositorios.ActividadRepositorio;
+using GestorActividades.Repositorios.UsuarioRepositorio;
+using GestorActividades.Servicios.ReporteServicio;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +23,9 @@ builder.Services.AddScoped<IRepositorioActividad, RepositorioActividad>();
 // Servicios
 builder.Services.AddScoped<IServicioActividad, ServicioActividad>();
 builder.Services.AddScoped<IServicioUsuario, ServicioUsuario>();
-builder.Services.AddScoped<IServicioProyecto, ServicioProyecto>();
+builder.Services.AddScoped<IServicioProyecto, ServicioProyecto>(); 
+builder.Services.AddScoped<IServicioReporte, ServicioReporte>();
+
 
 
 // Middleware y utilidades

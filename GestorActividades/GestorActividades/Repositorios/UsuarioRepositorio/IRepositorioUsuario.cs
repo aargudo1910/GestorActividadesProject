@@ -1,5 +1,5 @@
 ﻿using GestorActividades.Entidades;
-namespace GestorActividades.Repositorios.Interfaces
+namespace GestorActividades.Repositorios.UsuarioRepositorio
 {
     public interface IRepositorioUsuario : IRepositorioGenerico<Usuario>
     {

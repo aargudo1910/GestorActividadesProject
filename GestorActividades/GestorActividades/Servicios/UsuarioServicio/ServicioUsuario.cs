@@ -1,10 +1,10 @@
 ﻿using GestorActividades.DTOs.Usuario;
 using GestorActividades.Entidades;
 using GestorActividades.Excepciones.Usuarios;
-using GestorActividades.Repositorios.Interfaces;
+using GestorActividades.Repositorios.UsuarioRepositorio;
 using Microsoft.Extensions.Logging;
 
-namespace GestorActividades.Servicios
+namespace GestorActividades.Servicios.UsuarioServicio
 {
     public class ServicioUsuario : IServicioUsuario
     {

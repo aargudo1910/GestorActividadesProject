@@ -1,5 +1,5 @@
 ﻿using GestorActividades.DTOs.Usuario;
-using GestorActividades.Servicios;
+using GestorActividades.Servicios.UsuarioServicio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestorActividades.Controladores

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace GestorActividades.Repositorios.Interfaces
+namespace GestorActividades.Repositorios
 {
     public interface IRepositorioGenerico<T> where T : class
     {

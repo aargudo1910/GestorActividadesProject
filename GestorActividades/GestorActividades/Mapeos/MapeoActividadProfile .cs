@@ -11,10 +11,10 @@ namespace GestorActividades.Mapeos
             CreateMap<Actividade, ActividadDto>()
                 .ForMember(dest => dest.Fecha, opt => opt.MapFrom(src => src.Fecha.ToDateTime(TimeOnly.MinValue)));
 
-            CreateMap<ActividadCreateDto, Actividade>()
+            CreateMap<CrearActividadDto, Actividade>()
                 .ForMember(dest => dest.Fecha, opt => opt.MapFrom(src => DateOnly.FromDateTime(src.Fecha)));
 
-            CreateMap<ActividadUpdateDto, Actividade>()
+            CreateMap<ActualizarActividadDto, Actividade>()
                 .ForMember(dest => dest.Fecha, opt => opt.MapFrom(src => DateOnly.FromDateTime(src.Fecha)));
         }
     }

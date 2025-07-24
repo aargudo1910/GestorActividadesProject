@@ -5,51 +5,94 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Actividad": {
+    "/api/Actividades": {
       "get": {
         "tags": [
-          "Actividad"
+          "Actividades"
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ActividadDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ActividadDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ActividadDto"
+                  }
+                }
+              }
+            }
           }
         }
       },
       "post": {
         "tags": [
-          "Actividad"
+          "Actividades"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ActividadDto"
+                "$ref": "#/components/schemas/CrearActividadDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ActividadDto"
+                "$ref": "#/components/schemas/CrearActividadDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActividadDto"
+                "$ref": "#/components/schemas/CrearActividadDto"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActividadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActividadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActividadDto"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/api/Actividad/{id}": {
+    "/api/Actividades/{id}": {
       "get": {
         "tags": [
-          "Actividad"
+          "Actividades"
         ],
         "parameters": [
           {
@@ -64,13 +107,30 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActividadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActividadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActividadDto"
+                }
+              }
+            }
           }
         }
       },
       "put": {
         "tags": [
-          "Actividad"
+          "Actividades"
         ],
         "parameters": [
           {
@@ -87,17 +147,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ActividadDto"
+                "$ref": "#/components/schemas/ActualizarActividadDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ActividadDto"
+                "$ref": "#/components/schemas/ActualizarActividadDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ActividadDto"
+                "$ref": "#/components/schemas/ActualizarActividadDto"
               }
             }
           }
@@ -110,7 +170,7 @@
       },
       "delete": {
         "tags": [
-          "Actividad"
+          "Actividades"
         ],
         "parameters": [
           {
@@ -315,6 +375,44 @@
         }
       }
     },
+    "/api/reportes/actividades": {
+      "get": {
+        "tags": [
+          "Reporte"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "desde",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "hasta",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Usuario": {
       "get": {
         "tags": [
@@ -477,15 +575,56 @@
           "estado": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ActualizarActividadDto": {
+        "required": [
+          "descripcion",
+          "estado",
+          "fecha",
+          "horasEstimadas",
+          "horasReales",
+          "proyectoId",
+          "titulo"
+        ],
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
-          "fechaCreacion": {
+          "descripcion": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fecha": {
             "type": "string",
             "format": "date-time"
           },
-          "fechaModificacion": {
+          "horasEstimadas": {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "number",
+            "format": "double"
+          },
+          "horasReales": {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "number",
+            "format": "double"
+          },
+          "proyectoId": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "uuid"
+          },
+          "estado": {
+            "minLength": 1,
+            "pattern": "Activo|Inactivo|Eliminado",
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -525,6 +664,50 @@
             "type": "string"
           },
           "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CrearActividadDto": {
+        "required": [
+          "descripcion",
+          "fecha",
+          "horasEstimadas",
+          "proyectoId",
+          "titulo"
+        ],
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "descripcion": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "horasEstimadas": {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "number",
+            "format": "double"
+          },
+          "horasReales": {
+            "maximum": 100,
+            "minimum": 0,
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "proyectoId": {
             "type": "string",
             "format": "uuid"
           }

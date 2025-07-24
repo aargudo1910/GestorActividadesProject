@@ -1,9 +1,9 @@
-﻿namespace GestorActividades.DTOs.Reportes
+﻿namespace GestorActividades.DTOs.Reporte
 {
     public class ActividadReporteDto
     {
-        public DateTime Fecha { get; set; }
+        public DateOnly Fecha { get; set; }
         public string Titulo { get; set; }
-        public decimal HorasReales { get; set; }
+        public decimal? HorasReales { get; set; }
     }
 }

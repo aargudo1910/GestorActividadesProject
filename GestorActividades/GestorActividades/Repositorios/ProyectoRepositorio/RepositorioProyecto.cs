@@ -1,9 +1,8 @@
 ﻿using GestorActividades.Datos;
 using GestorActividades.Entidades;
-using GestorActividades.Repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace GestorActividades.Repositorios
+namespace GestorActividades.Repositorios.ProyectoRepositorio
 {
     public class RepositorioProyecto : RepositorioGenerico<Proyecto>, IRepositorioProyecto
     {

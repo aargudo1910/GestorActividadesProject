@@ -1,34 +1,54 @@
 [
   {
-    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "ContainingType": "GestorActividades.Controladores.ActividadesController",
     "Method": "ObtenerTodos",
-    "RelativePath": "api/Actividad",
+    "RelativePath": "api/Actividades",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestorActividades.DTOs.Actividade.ActividadDto, GestorActividades, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "ContainingType": "GestorActividades.Controladores.ActividadesController",
     "Method": "Crear",
-    "RelativePath": "api/Actividad",
+    "RelativePath": "api/Actividades",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "GestorActividades.DTOs.Actividade.ActividadDto",
+        "Type": "GestorActividades.DTOs.Actividade.CrearActividadDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "GestorActividades.DTOs.Actividade.ActividadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "ContainingType": "GestorActividades.Controladores.ActividadesController",
     "Method": "ObtenerPorId",
-    "RelativePath": "api/Actividad/{id}",
+    "RelativePath": "api/Actividades/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -39,12 +59,22 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "GestorActividades.DTOs.Actividade.ActividadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "ContainingType": "GestorActividades.Controladores.ActividadesController",
     "Method": "Actualizar",
-    "RelativePath": "api/Actividad/{id}",
+    "RelativePath": "api/Actividades/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -56,16 +86,16 @@
       },
       {
         "Name": "dto",
-        "Type": "GestorActividades.DTOs.Actividade.ActividadDto",
+        "Type": "GestorActividades.DTOs.Actividade.ActualizarActividadDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "ContainingType": "GestorActividades.Controladores.ActividadesController",
     "Method": "Eliminar",
-    "RelativePath": "api/Actividad/{id}",
+    "RelativePath": "api/Actividades/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -183,6 +213,32 @@
         "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReporteController",
+    "Method": "ObtenerReporte",
+    "RelativePath": "api/reportes/actividades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "desde",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "hasta",
+        "Type": "System.DateTime",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

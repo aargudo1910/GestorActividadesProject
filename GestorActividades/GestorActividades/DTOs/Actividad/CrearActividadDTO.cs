@@ -2,7 +2,7 @@
 
 namespace GestorActividades.DTOs.Actividade
 {
-    public class ActividadCreateDto
+    public class CrearActividadDto
     {
         [Required(ErrorMessage = "El título es obligatorio.")]
         [StringLength(100, ErrorMessage = "El título no debe superar los 100 caracteres.")]
@@ -16,10 +16,10 @@ namespace GestorActividades.DTOs.Actividade
         public DateTime Fecha { get; set; }
 
         [Required(ErrorMessage = "Las horas estimadas son obligatorias.")]
-        [Range(0, 1000, ErrorMessage = "Las horas estimadas deben ser un valor positivo.")]
+        [Range(1, 100, ErrorMessage = "Las horas estimadas deben ser un valor positivo.")]
         public decimal HorasEstimadas { get; set; }
 
-        [Range(0, 1000, ErrorMessage = "Las horas reales deben ser un valor positivo.")]
+        [Range(0, 100, ErrorMessage = "Las horas reales deben ser un valor positivo.")]
         public decimal? HorasReales { get; set; }
 
         [Required(ErrorMessage = "El identificador del proyecto es obligatorio.")]

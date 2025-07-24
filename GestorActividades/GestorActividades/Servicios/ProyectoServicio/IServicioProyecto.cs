@@ -1,6 +1,6 @@
 ﻿using GestorActividades.DTOs.Proyecto;
 
-namespace GestorActividades.Servicios.Interfaces
+namespace GestorActividades.Servicios.ProyectoServicio
 {
     public interface IServicioProyecto
     {
