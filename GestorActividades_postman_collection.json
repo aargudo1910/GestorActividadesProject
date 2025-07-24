@@ -1,0 +1,469 @@
+{
+	"info": {
+		"_postman_id": "a993fb92-3ed9-4274-a28a-13600b48e919",
+		"name": "Gestor de Actividades API",
+		"description": "Colección de endpoints para el sistema Gestor de Actividades",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14154048"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Obtener todos los usuarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/usuario",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener usuario por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/usuario/{{usuario_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"{{usuario_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombreCompleto\": \"Juan Pérez\",\n  \"correo\": \"juan.perez@email.com\",\n  \"telefono\": \"1234567890\",\n  \"rol\": \"Editor\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/usuario",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombreCompleto\": \"Juan Pérez Actualizado\",\n  \"correo\": \"juan.perez.nuevo@email.com\",\n  \"telefono\": \"0987654321\",\n  \"rol\": \"Admin\",\n  \"estado\": \"Activo\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/usuario/{{usuario_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"{{usuario_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/usuario/{{usuario_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"usuario",
+								"{{usuario_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Proyectos",
+			"item": [
+				{
+					"name": "Obtener todos los proyectos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/proyectos",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener proyecto por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/proyectos/{{proyecto_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"proyectos",
+								"{{proyecto_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear proyecto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Proyecto de Ejemplo\",\n  \"descripcion\": \"Descripción del proyecto de ejemplo\",\n  \"fechaInicio\": \"2024-01-01T00:00:00\",\n  \"fechaFin\": \"2024-12-31T23:59:59\",\n  \"usuarioId\": \"{{usuario_id}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/proyectos",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar proyecto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Proyecto Actualizado\",\n  \"descripcion\": \"Descripción actualizada del proyecto\",\n  \"fechaInicio\": \"2024-01-01T00:00:00\",\n  \"fechaFin\": \"2024-12-31T23:59:59\",\n  \"estado\": \"Activo\",\n  \"usuarioId\": \"{{usuario_id}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/proyectos/{{proyecto_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"proyectos",
+								"{{proyecto_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar proyecto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/proyectos/{{proyecto_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"proyectos",
+								"{{proyecto_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Actividades",
+			"item": [
+				{
+					"name": "Obtener todas las actividades",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/actividades",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"actividades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener actividad por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/actividades/{{actividad_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"actividades",
+								"{{actividad_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear actividad",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"titulo\": \"Actividad de Ejemplo\",\n  \"descripcion\": \"Descripción de la actividad de ejemplo\",\n  \"fecha\": \"2024-01-15T09:00:00\",\n  \"horasEstimadas\": 8.5,\n  \"horasReales\": 7.0,\n  \"proyectoId\": \"{{proyecto_id}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/actividades",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"actividades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar actividad",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"titulo\": \"Actividad Actualizada\",\n  \"descripcion\": \"Descripción actualizada de la actividad\",\n  \"fecha\": \"2024-01-16T10:00:00\",\n  \"horasEstimadas\": 10.0,\n  \"horasReales\": 9.5,\n  \"proyectoId\": \"{{proyecto_id}}\",\n  \"estado\": \"Activo\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/actividades/{{actividad_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"actividades",
+								"{{actividad_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar actividad",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/actividades/{{actividad_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"actividades",
+								"{{actividad_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reportes",
+			"item": [
+				{
+					"name": "Obtener reporte de actividades",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/reportes/actividades?usuarioId={{usuario_id}}&desde=2024-01-01T00:00:00&hasta=2024-12-31T23:59:59",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"reportes",
+								"actividades"
+							],
+							"query": [
+								{
+									"key": "usuarioId",
+									"value": "{{usuario_id}}"
+								},
+								{
+									"key": "desde",
+									"value": "2024-01-01T00:00:00"
+								},
+								{
+									"key": "hasta",
+									"value": "2024-12-31T23:59:59"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://localhost:7107",
+			"type": "string"
+		},
+		{
+			"key": "usuario_id",
+			"value": "00000000-0000-0000-0000-000000000000",
+			"type": "string"
+		},
+		{
+			"key": "proyecto_id",
+			"value": "00000000-0000-0000-0000-000000000000",
+			"type": "string"
+		},
+		{
+			"key": "actividad_id",
+			"value": "00000000-0000-0000-0000-000000000000",
+			"type": "string"
+		}
+	]
+}
