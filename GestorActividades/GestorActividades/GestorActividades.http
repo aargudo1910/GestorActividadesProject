@@ -1,0 +1,6 @@
+@GestorActividades_HostAddress = http://localhost:5278
+
+GET {{GestorActividades_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

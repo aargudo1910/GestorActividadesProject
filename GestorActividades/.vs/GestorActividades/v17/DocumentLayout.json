@@ -1,0 +1,513 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\entidades\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\entidades\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\controladores\\actividadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\controladores\\actividadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\excepciones\\excepcionnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\excepciones\\excepcionnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\servicios\\iservicioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\servicios\\iservicioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\servicios\\servicioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\servicios\\servicioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\middleware\\manejadorexcepcionesmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\middleware\\manejadorexcepcionesmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\excepciones\\excepcionactividadinvalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\excepciones\\excepcionactividadinvalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\actividad\\actividaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\actividad\\actividaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\actividad\\crearactividaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\actividad\\crearactividaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\actividad\\actualizaractividaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\actividad\\actualizaractividaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\repositorios\\interfaces\\irepositoriogenerico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\repositorios\\interfaces\\irepositoriogenerico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\repositorios\\repositorioproyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\repositorios\\repositorioproyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\repositorios\\repositoriogenerico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\repositorios\\repositoriogenerico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\repositorios\\interfaces\\irepositorioproyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\repositorios\\interfaces\\irepositorioproyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\entidades\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\entidades\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\repositorios\\repositorioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\repositorios\\repositorioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\repositorios\\interfaces\\irepositorioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\repositorios\\interfaces\\irepositorioactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\repositorios\\interfaces\\irepositoriousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\repositorios\\interfaces\\irepositoriousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\repositorios\\repositoriousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\repositorios\\repositoriousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\entidades\\entidadbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\entidades\\entidadbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\reportes\\reporteactividadesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\reportes\\reporteactividadesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\reportes\\proyectoreportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\reportes\\proyectoreportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\reportes\\actividadreportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\reportes\\actividadreportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\proyecto\\proyectodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\proyecto\\proyectodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\proyecto\\crearproyectodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\proyecto\\crearproyectodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|c:\\users\\aargudo\\source\\repos\\gestoractividades\\gestoractividades\\dtos\\proyecto\\actualizarproyectodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01BDC6DF-EE33-48A5-9116-02AF7BE5EB6E}|GestorActividades\\GestorActividades.csproj|solutionrelative:gestoractividades\\dtos\\proyecto\\actualizarproyectodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActividadController.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Controladores\\ActividadController.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Controladores\\ActividadController.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Controladores\\ActividadController.cs",
+              "RelativeToolTip": "GestorActividades\\Controladores\\ActividadController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T15:38:12.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManejadorExcepcionesMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Middleware\\ManejadorExcepcionesMiddleware.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Middleware\\ManejadorExcepcionesMiddleware.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Middleware\\ManejadorExcepcionesMiddleware.cs",
+              "RelativeToolTip": "GestorActividades\\Middleware\\ManejadorExcepcionesMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:56:21.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExcepcionNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Excepciones\\ExcepcionNegocio.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Excepciones\\ExcepcionNegocio.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Excepciones\\ExcepcionNegocio.cs",
+              "RelativeToolTip": "GestorActividades\\Excepciones\\ExcepcionNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:54:00.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Program.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Program.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Program.cs",
+              "RelativeToolTip": "GestorActividades\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:16:08.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Actividad.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Entidades\\Actividad.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Entidades\\Actividad.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Entidades\\Actividad.cs",
+              "RelativeToolTip": "GestorActividades\\Entidades\\Actividad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:06:13.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServicioActividad.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Servicios\\ServicioActividad.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Servicios\\ServicioActividad.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Servicios\\ServicioActividad.cs",
+              "RelativeToolTip": "GestorActividades\\Servicios\\ServicioActividad.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwD0AAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:59:04.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IServicioActividad.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Servicios\\IServicioActividad.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Servicios\\IServicioActividad.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Servicios\\IServicioActividad.cs",
+              "RelativeToolTip": "GestorActividades\\Servicios\\IServicioActividad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:41:14.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExcepcionActividadInvalida.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Excepciones\\ExcepcionActividadInvalida.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Excepciones\\ExcepcionActividadInvalida.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Excepciones\\ExcepcionActividadInvalida.cs",
+              "RelativeToolTip": "GestorActividades\\Excepciones\\ExcepcionActividadInvalida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T15:20:37.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ActividadDto.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Actividad\\ActividadDto.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Actividad\\ActividadDto.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Actividad\\ActividadDto.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Actividad\\ActividadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:51:27.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CrearActividadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Actividad\\CrearActividadDTO.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Actividad\\CrearActividadDTO.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Actividad\\CrearActividadDTO.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Actividad\\CrearActividadDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:51:56.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ActualizarActividadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Actividad\\ActualizarActividadDTO.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Actividad\\ActualizarActividadDTO.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Actividad\\ActualizarActividadDTO.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Actividad\\ActualizarActividadDTO.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:51:39.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRepositorioGenerico.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\Interfaces\\IRepositorioGenerico.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Repositorios\\Interfaces\\IRepositorioGenerico.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\Interfaces\\IRepositorioGenerico.cs",
+              "RelativeToolTip": "GestorActividades\\Repositorios\\Interfaces\\IRepositorioGenerico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T22:43:22.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RepositorioProyecto.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\RepositorioProyecto.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Repositorios\\RepositorioProyecto.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\RepositorioProyecto.cs",
+              "RelativeToolTip": "GestorActividades\\Repositorios\\RepositorioProyecto.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA3wAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T23:13:15.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RepositorioGenerico.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\RepositorioGenerico.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Repositorios\\RepositorioGenerico.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\RepositorioGenerico.cs",
+              "RelativeToolTip": "GestorActividades\\Repositorios\\RepositorioGenerico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T22:47:28.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IRepositorioProyecto.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\Interfaces\\IRepositorioProyecto.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Repositorios\\Interfaces\\IRepositorioProyecto.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\Interfaces\\IRepositorioProyecto.cs",
+              "RelativeToolTip": "GestorActividades\\Repositorios\\Interfaces\\IRepositorioProyecto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T22:56:26.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Proyecto.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Entidades\\Proyecto.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Entidades\\Proyecto.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Entidades\\Proyecto.cs",
+              "RelativeToolTip": "GestorActividades\\Entidades\\Proyecto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:53:34.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RepositorioActividad.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\RepositorioActividad.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Repositorios\\RepositorioActividad.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\RepositorioActividad.cs",
+              "RelativeToolTip": "GestorActividades\\Repositorios\\RepositorioActividad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T23:08:01.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRepositorioActividad.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\Interfaces\\IRepositorioActividad.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Repositorios\\Interfaces\\IRepositorioActividad.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\Interfaces\\IRepositorioActividad.cs",
+              "RelativeToolTip": "GestorActividades\\Repositorios\\Interfaces\\IRepositorioActividad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T23:01:15.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IRepositorioUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\Interfaces\\IRepositorioUsuario.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Repositorios\\Interfaces\\IRepositorioUsuario.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\Interfaces\\IRepositorioUsuario.cs",
+              "RelativeToolTip": "GestorActividades\\Repositorios\\Interfaces\\IRepositorioUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T22:50:31.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RepositorioUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\RepositorioUsuario.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Repositorios\\RepositorioUsuario.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Repositorios\\RepositorioUsuario.cs",
+              "RelativeToolTip": "GestorActividades\\Repositorios\\RepositorioUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T22:51:56.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Datos\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Datos\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Datos\\AppDbContext.cs",
+              "RelativeToolTip": "GestorActividades\\Datos\\AppDbContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T15:05:21.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Entidades\\Usuario.cs",
+              "RelativeToolTip": "GestorActividades\\Entidades\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:53:41.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EntidadBase.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Entidades\\EntidadBase.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\Entidades\\EntidadBase.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\Entidades\\EntidadBase.cs",
+              "RelativeToolTip": "GestorActividades\\Entidades\\EntidadBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:53:29.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ReporteActividadesDto.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Reportes\\ReporteActividadesDto.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Reportes\\ReporteActividadesDto.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Reportes\\ReporteActividadesDto.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Reportes\\ReporteActividadesDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:52:53.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProyectoReporteDto.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Reportes\\ProyectoReporteDto.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Reportes\\ProyectoReporteDto.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Reportes\\ProyectoReporteDto.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Reportes\\ProyectoReporteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:52:47.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ActividadReporteDto.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Reportes\\ActividadReporteDto.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Reportes\\ActividadReporteDto.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Reportes\\ActividadReporteDto.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Reportes\\ActividadReporteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:52:32.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProyectoDto.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Proyecto\\ProyectoDto.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Proyecto\\ProyectoDto.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Proyecto\\ProyectoDto.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Proyecto\\ProyectoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:52:24.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CrearProyectoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Proyecto\\CrearProyectoDTO.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Proyecto\\CrearProyectoDTO.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Proyecto\\CrearProyectoDTO.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Proyecto\\CrearProyectoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:52:17.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ActualizarProyectoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Proyecto\\ActualizarProyectoDTO.cs",
+              "RelativeDocumentMoniker": "GestorActividades\\DTOs\\Proyecto\\ActualizarProyectoDTO.cs",
+              "ToolTip": "C:\\Users\\aargudo\\source\\repos\\GestorActividades\\GestorActividades\\DTOs\\Proyecto\\ActualizarProyectoDTO.cs",
+              "RelativeToolTip": "GestorActividades\\DTOs\\Proyecto\\ActualizarProyectoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:52:10.59Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/Actividad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "Method": "Crear",
+    "RelativePath": "api/Actividad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "GestorActividades.DTOs.Actividad.ActividadDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/Actividad/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Actividad/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "GestorActividades.DTOs.Actividad.ActividadDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestorActividades.Controladores.ActividadController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Actividad/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
